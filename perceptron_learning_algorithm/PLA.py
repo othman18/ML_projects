@@ -10,6 +10,7 @@ def f(x):
     # y = ax + b
     return random_v * x + random_v2
 
+
 # perceptron learning algorithm
 class PLA:
     weights = []
@@ -63,6 +64,7 @@ def run(n):
     for i in range(0, n):
         points.append(Point())
     counter = 0
+
     while True:
         perceptron.done_training = 0
         for point in points:
@@ -75,6 +77,7 @@ def run(n):
             break
         if counter == 1000:
             print("took too long had to break")
+            counter = -1
             break
         counter += 1
 
@@ -84,6 +87,10 @@ def run(n):
         else:
             plt.scatter(point.x, point.y, color=point.color)
     plt.plot([-1, 1], [perceptron.guess_y(-1), perceptron.guess_y(1)], 'k-', lw=2)
+    if counter != -1:
+        plt.title("Classification of %s points in %s iterations" % (n, counter))
+    else:
+        plt.title("Classification of %s points in more than 1000 iterations" % n)
 
     plt.show()
 
