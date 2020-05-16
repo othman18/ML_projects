@@ -1,9 +1,9 @@
 # Mini_ML_Projects
 
 
-#### Requirements
-* python3
-* Each project has a requirements.txt file which contains its needed packages, to install said packages; within the project directory run:
-```bash
-$ pip install -r requirements.txt
-```
+#### Projects
+* neural network - Python
+* perceptron learning algorithm - Python
+* genetic algorithm - Java
+
+### Each project has its own dedicated README.md file with more explenation about it.
