@@ -1,7 +1,7 @@
 # Neural Network
 
 
-### A 3 layered neural network that is able to detect hand written digits (28X28 pixels) with 99% accuracy. Using the mnist handwritten digit database.
+#### A 3 layered neural network that is able to detect hand written digits (28X28 pixels) with 99% accuracy. Using the mnist handwritten digit database.
 
 
 ### Requirements
