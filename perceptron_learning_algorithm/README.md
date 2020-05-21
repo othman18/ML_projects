@@ -1,7 +1,7 @@
 # Perceptron Learning Algorithm
 
 
-#### A binary classifier that accepts linearly separable datasets.
+#### A binary classifier that generates random linearly separable datasets.
 
 ### Requirements
 * python3
