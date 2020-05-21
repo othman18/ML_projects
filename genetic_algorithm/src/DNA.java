@@ -8,7 +8,6 @@ public class DNA {
 	private String targetPhrase = null;
 	// ASCII values
 	private int min = 32, max = 126;
-	// private int min = 97, max = 122;
 
 	DNA(String target) {
 		targetPhrase = target;
@@ -27,7 +26,9 @@ public class DNA {
 			if (genes[i] == targetPhrase.charAt(i))
 				score++;
 		}
-		this.fitness = (float) score / (float) genesLen;
+		this.fitness = 0.01f + (float) score / (float) genesLen;
+		//improves the fitness function
+		this.fitness = (float)Math.pow(this.fitness , 25);
 	}
 
 	DNA crossover(DNA partner) {
