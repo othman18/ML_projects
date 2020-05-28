@@ -67,7 +67,8 @@ public class Population {
 				return curr;
 			counter++;
 		}
-		return null;
+		//default return
+		return population[0];
 	}
 
 	public DNA getBest() {

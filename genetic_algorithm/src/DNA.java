@@ -26,9 +26,10 @@ public class DNA {
 			if (genes[i] == targetPhrase.charAt(i))
 				score++;
 		}
-		this.fitness = 0.01f + (float) score / (float) genesLen;
+		this.fitness = 0.001f + (float) score / (float) genesLen;
 		//improves the fitness function
 		this.fitness = (float)Math.pow(this.fitness , 25);
+		this.fitness *= (float)Math.exp(25);
 	}
 
 	DNA crossover(DNA partner) {

@@ -3,7 +3,8 @@ public class Simulation {
 
 	public static void main(String[] args) {
 		String target = "to be or not to be";
-/*		int n = 1000;
+/*
+ 		int n = 1000;
 		int[] res = new int[n];
 		for(int i = 0; i < n; i++) {
 			Population s = new Population(target, 200);
@@ -21,7 +22,7 @@ public class Simulation {
 		
 //		*/
 
-	//*		
+//*		
   		Population s = new Population(target, 200);
 		while (!s.foundTarget()) {
 			
